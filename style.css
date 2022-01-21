@@ -10,6 +10,10 @@
 } */
 
 /* ================================================================================== */
+:root {
+  --dark-clr: rgb(39, 39, 43);
+  --lighter: rgb(53, 53, 58);
+}
 *,
 *::after,
 *::before {
@@ -18,4 +22,104 @@
 
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+/* Styling elements */
+/* ==================================== */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: rgb(255, 81, 0);
+  font-weight: 900;
+}
+
+/* Navigation */
+/* ==================================== */
+nav {
+  display: flex;
+}
+.nav__links {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  align-items: center;
+}
+.nav__link {
+  text-decoration: none;
+}
+
+/* Header */
+/* ==================================== */
+.header__title {
+  margin: 2.5rem auto;
+}
+.heading {
+  text-align: center;
+}
+.subheading {
+  text-align: center;
+  /* letter-spacing: 2px; */
+}
+
+/* Bookmarks section */
+/* ==================================== */
+.bookmarks__section {
+  padding: 4rem 0;
+  height: auto;
+  background-color: var(--dark-clr);
+  color: white;
+  width: 100%;
+}
+.bookmarks__content {
+  display: flex;
+  flex-direction: column;
+}
+.bookmarks__content div {
+  background-color: var(--lighter);
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* List links */
+/* ==================================== */
+li {
+  list-style-type: none;
+}
+.list__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  /* font-weight: 700; */
+}
+
+/* Media queries */
+/* ==================================== */
+@media (min-width: 900px) {
+  .nav__links {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+    column-gap: 1rem;
+  }
+
+  .bookmarks__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(5, 1fr); */
+    grid-template-rows: auto;
+    /* grid-column-gap: 2px; */
+    /* grid-row-gap: 2px; */
+    gap: 2px;
+  }
+  .bookmarks__content div {
+    margin: 0;
+  }
 }

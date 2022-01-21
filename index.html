@@ -4,51 +4,367 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Web Dev Resources</title>
   </head>
   <body>
     <!-- Uncheck to make sure CSS and JS files are working -->
     <!-- <h1>Working CSS</h1> -->
     <!-- <h2 id="subheading"></h2> -->
-
-    <header>
-      <div class="header__title">
-        <h1>Useful Web Dev Tools</h1>
+    <nav class="">
+      <div class="nav__section container">
+        <ul class="nav__links">
+          <li class="nav__list__item">
+            <a class="nav__link" href="#generators">Generators</a>
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__link" href="#tutorials">Tutorials</a>
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__link" href="#documentation">Documentation</a>
+          </li>
+        </ul>
       </div>
-    </header>
-
-    <section>
-      <div>
-        <h2>
+    </nav>
+    <header>
+      <div class="header__title container">
+        <h1 class="heading">Useful Web Dev Tools</h1>
+        <h2 class="subheading container">
           This page will be used to collect useful web dev resources and refer
           to them when needed to avoid bookmark fatigue.
         </h2>
       </div>
+    </header>
+
+    <section class="bookmarks__section">
+      <div class="container bookmarks__content">
+        <div class="links">
+          <h3 id="links">Links</h3>
+          <ul>
+            <li>
+              <a target="blank" class="list__link" href="https://bio.link/yusaf"
+                >Bio Links</a
+              >
+            </li>
+            <li>
+              <a target="blank" class="list__link" href="https://dev.page/yusaf"
+                >Dev Page</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://yusafs94.github.io/Portfolio/"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://selene.hud.ac.uk/phpmyadmin/index.php"
+                >Selene Server</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://github.com/YusafS94"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="uni">
+          <h3 id="uni">Uni:</h3>
+          <ul>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://myhud.hud.ac.uk/dashboard/hometaught"
+                >Hud Portal</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="inspiration">
+          <h3 id="inspiration">Inspiration:</h3>
+          <ul>
+            <li>
+              <a target="blank" class="list__link" href="https://dribbble.com/"
+                >Dribbble</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://www.behance.net/"
+                >Behance</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://www.awwwards.com/"
+                >Awwwards</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="learning">
+          <h3 id="learning">Learning:</h3>
+          <ul>
+            <li>
+              <a target="blank" class="list__link" href="https://fireship.io/"
+                >Fireship.io</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://css-tricks.com/"
+                >CSS-Tricks</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://www.freecodecamp.org/learn"
+                >freeCodeCamp</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://www.codecademy.com/"
+                >Codecademy</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://www.udemy.com/home/my-courses/learning/"
+                >Udemy</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="documentation">
+          <h3 id="documentation">Documentation:</h3>
+          <ul>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://docs.python.org/3/"
+                >Python</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://www.php.net/docs.php"
+                >PHP</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                >JavaScript</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://reactjs.org/docs/getting-started.html"
+                >React</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="tutorials">
+          <h3 id="tutorials">Tutorials:</h3>
+          <ul>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://www.youtube.com/watch?v=rfscVS0vtbw"
+                >Python 4 hour beginner course</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://www.linkedin.com/learning/python-essential-training-2018/"
+                >Python LinkedinLearning course</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://www.w3schools.com/python/"
+                >Python W3Schools course</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="generators">
+          <h3 id="generators">Generators:</h3>
+          <ul>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://hype4.academy/tools/claymorphism-generator"
+                >Claymorphism Generator (Hype4 Academy)</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://haikei.app/generators/"
+                >Haikei</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://cssgrid-generator.netlify.app/"
+                >CSS Grid Generator</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="colour">
+          <h3 id="colour">Colour:</h3>
+          <ul>
+            <li>
+              <a target="blank" class="list__link" href="https://mycolor.space/"
+                >ColorSpace</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://color.adobe.com/create/color-wheel"
+                >Adobe Color</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://www.designgradients.com/?ref=producthunt"
+                >Design Gradients</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://coolors.co/eaeaea-cbc5ea-73628a-313d5a-183642"
+                >Coolors</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="packages">
+          <h3 id="packages">Packages:</h3>
+          <ul>
+            <li>
+              <a target="blank" class="list__link" href="https://openbase.com/"
+                >Openbase</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="forums">
+          <h3 id="forums">Forums and Articles:</h3>
+          <ul>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://twitter.com/home"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a target="blank" class="list__link" href="https://app.daily.dev/"
+                >Daily Dev</a
+              >
+            </li>
+            <li>
+              <a target="blank" class="list__link" href="https://dev.to/"
+                >Dev.to</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://forum.freecodecamp.org/"
+                >freeCodeCamp</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                class="list__link"
+                href="https://feedly.com/i/my"
+                >Feedly</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="design">
+          <h3 id="design">Design:</h3>
+          <ul>
+            <li>
+              <a target="blank" class="list__link" href="https://goodbrief.io/"
+                >Goodbrief</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <table>
-        <tr>
-          <th>Category</th>
-          <th>Name</th>
-          <th>Date Added</th>
-        </tr>
-        <tr>
-          <td>Frameworks</td>
-          <td>Laravel</td>
-          <td>19/01/2022</td>
-        </tr>
-      </table>
-    </section>
-
-    <section>
-      <h3>Generators:</h3>
-      <ul>
-        <li>https://hype4.academy/tools/claymorphism-generator</li>
-        <li>https://haikei.app/generators/</li>
-      </ul>
-    </section>
     <script src="app.js"></script>
   </body>
 </html>
